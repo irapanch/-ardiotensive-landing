@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cardiotensive is a  resource describing a dietary supplement designed to support cardiovascular health. Service created by the Iryna Panchenko"
+    />
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <title>Cardiotensive</title>
+  </head>
+  <body>
+    <!-- =========== HEADER =========== -->
+    <header class="header-wrapper container">
+      <a class="logo link" href="./index.html">Cardio<span>tensive</span></a>
+      <img class="logo-img" src="./images/logo1.jpg" alt="logo" />
+
+      <nav>
+        <ul class="menu-list">
+          <li class="menu-link"><a href="#about">About</a></li>
+          <li class="menu-link"><a href="#reviews">Reviews</a></li>
+          <li class="menu-link"><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!--  ======  BURGER BUTTON  ========= -->
+        <button
+          type="button"
+          class="header-mobile-menu-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="header-mobile-menu-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-burger-1"></use>
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <!--  ======  BUNNER  ========= -->
+    <section class="banner">
+      <div class="container">
+        <h1>Cardiotensive</h1>
+        <div class="banner-wrap">
+          <div class="banner-img">
+            <img
+              src="./images/CardiotensiveMob.png"
+              alt="Cardiotensive"
+              width="728"
+              height="725"
+            />
+          </div>
+
+          <p class="banner-text">
+            <strong>Cardiotensive</strong> is a unique dietary supplement
+            designed to support cardiovascular health, cleanse blood vessels,
+            and combat hypertension and high blood pressure. This product
+            combines powerful natural ingredients that work synergistically to
+            achieve maximum effectiveness.
+          </p>
+        </div>
+        <h3>
+          <strong>Cardiotensive</strong> is your reliable partner in maintaining
+          heart and vascular health!
+        </h3>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="advantage">
+        <img src="icon1.png" alt="Icon 1" />
+        <h2>Advantage 1</h2>
+        <p>Description of advantage 1.</p>
+      </div>
+      <div class="advantage">
+        <img src="icon2.png" alt="Icon 2" />
+        <h2>Advantage 2</h2>
+        <p>Description of advantage 2.</p>
+      </div>
+      <div class="advantage">
+        <img src="icon3.png" alt="Icon 3" />
+        <h2>Advantage 3</h2>
+        <p>Description of advantage 3.</p>
+      </div>
+    </section>
+
+    <section id="reviews" class="reviews">
+      <div class="review-card">
+        <img src="user1.jpg" alt="User 1" />
+        <h3>Name 1</h3>
+        <p>Review 1.</p>
+      </div>
+      <div class="review-card">
+        <img src="user2.jpg" alt="User 2" />
+        <h3>Name 2</h3>
+        <p>Review 2.</p>
+      </div>
+      <div class="review-card">
+        <img src="user3.jpg" alt="User 3" />
+        <h3>Name 3</h3>
+        <p>Review 3.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
