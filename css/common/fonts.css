@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "Cera Pro";
+  src: url(../../fonts/CeraPro-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cera Pro";
+  src: url(../../fonts/CeraPro-RegularItalic.ttf);
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url(../../fonts/CeraPro-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ------------------------------------ */
+
+@font-face {
+  font-family: "Trajan Pro 3";
+  src: url(../../fonts/TrajanPro3Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Trajan Pro 3";
+  src: url(../../fonts/TrajanPro3SemiBold.ttf);
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Trajan Pro 3";
+  src: url(../../fonts/TrajanPro3Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
