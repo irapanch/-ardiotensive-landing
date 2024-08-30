@@ -1,0 +1,98 @@
+/* --- mobile 320-767 --- */
+
+h1 {
+  font-size: 32px;
+  font-weight: 400;
+  font-family: "Trajan Pro 3";
+  margin-bottom: 30px;
+  padding-top: 50px;
+  color: var(--pressed-state-color);
+}
+h3 {
+  font-style: italic;
+  margin-top: 20px;
+  color: var(--pressed-state-color);
+  padding-bottom: 50px;
+}
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+.banner-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-img {
+  position: absolute;
+  top: 25%;
+  transform: translateY(-50%);
+  animation: slide-in 2s forwards;
+  width: 280px;
+  height: 280px;
+}
+@keyframes slide-in {
+  from {
+    left: -50%;
+  }
+  to {
+    left: 8%;
+  }
+}
+.banner-text {
+  text-align: justify;
+  font-size: 20px;
+  margin-top: 284px;
+}
+
+/* --- tablet 768-1439 --- */
+@media screen and (min-width: 768px) {
+  .banner .container {
+    width: 768px;
+  }
+  .banner-wrap {
+    position: relative;
+  }
+  .banner-img {
+    top: 60%;
+    width: 232px;
+  }
+  .banner-img img {
+    width: 100%;
+  }
+  .banner-text {
+    width: 350px;
+    margin-left: auto;
+    margin-top: 0;
+  }
+}
+/* --- desktop 1440 --- */
+@media screen and (min-width: 1440px) {
+  h1 {
+    font-size: 42px;
+    margin-bottom: 40px;
+  }
+  h3 {
+    font-size: 30px;
+    margin-top: 50px;
+  }
+  .banner .container {
+    width: 1440px;
+  }
+  .banner-wrap {
+    min-height: 410px;
+  }
+  .banner-img {
+    top: 30%;
+    width: 410px;
+  }
+  .banner-text {
+    width: 60%;
+    font-size: 30px;
+    margin-top: 84px;
+  }
+}
