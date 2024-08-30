@@ -1,0 +1,109 @@
+/* --- mobile 320-767 --- */
+header {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(246, 245, 239, 0.2);
+  position: relative;
+}
+.header-wrapper {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.logo-img {
+  position: absolute;
+  top: 10px;
+  left: 5%;
+  z-index: -1;
+  width: 60px;
+}
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--logo-text);
+}
+.logo span {
+  color: var(--text-color);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .menu-list {
+    display: none;
+  }
+}
+
+/* ======BURGER BUTTON mobile========= */
+.header-mobile-menu-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+  width: 32px;
+  height: 22px;
+  cursor: pointer;
+}
+.header-mobile-menu-icon {
+  fill: var(--logo-text);
+}
+
+/* --- tablet 768-1439 --- */
+@media screen and (min-width: 768px) {
+  header {
+    justify-content: space-between;
+  }
+  .header-mobile-menu-btn {
+    display: none;
+  }
+
+  nav {
+    font-family: "Trajan Pro 3", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .menu-list {
+    display: flex;
+    gap: 60px;
+  }
+  .logo-img {
+    top: 5px;
+    left: 4%;
+    width: 70px;
+  }
+  .logo {
+    padding-left: 42px;
+  }
+  .menu-link:hover,
+  .menu-link:focus {
+    color: var(--pressed-state-color);
+    text-decoration: underline;
+    text-decoration-color: var(--pressed-state-color);
+  }
+}
+
+/* --- desktop 1440 --- */
+@media screen and (min-width: 1440px) {
+  .logo-img {
+    top: 9px;
+    left: 3%;
+    width: 74px;
+  }
+  .logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+
+  nav {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .menu-list {
+    gap: 110px;
+  }
+}
