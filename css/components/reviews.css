@@ -1,0 +1,81 @@
+/* --- mobile 320-767 --- */
+.reviews {
+  background-color: var(--services-image-color);
+  padding-bottom: 50px;
+}
+.reviews .container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.reviews h2 {
+  font-size: 32px;
+  font-weight: 400;
+  font-family: "Trajan Pro 3";
+  text-align: center;
+  margin-bottom: 30px;
+  padding-top: 50px;
+  color: var(--pressed-state-color);
+}
+.review-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 10px;
+  border: 2px solid var(--pressed-state-color);
+  border-radius: 7px;
+}
+.review-card img {
+  width: 260px;
+}
+.reviews h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.review-text {
+  display: inline;
+}
+.more-text {
+  display: none;
+}
+
+.dots {
+  display: inline;
+}
+
+.read-more {
+  font-size: 14px;
+  background: none;
+  border: none;
+  color: var(--pressed-state-color);
+  cursor: pointer;
+  text-decoration: underline;
+}
+.video-block {
+  padding-top: 20px;
+}
+.review-video {
+  padding-top: 20px;
+  text-decoration: underline;
+  color: var(--pressed-state-color);
+}
+/* --- tablet 768-1439 --- */
+@media screen and (min-width: 768px) {
+  .review-card {
+    flex-direction: row;
+  }
+}
+/* --- desktop 1440 --- */
+@media screen and (min-width: 1440px) {
+  .reviews .container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .review-card img {
+    width: 130px;
+  }
+}
