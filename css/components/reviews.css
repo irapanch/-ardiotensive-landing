@@ -75,6 +75,9 @@
     flex-direction: row;
     gap: 20px;
   }
+  .review-card {
+    width: 440px;
+  }
   .review-card img {
     width: 130px;
   }

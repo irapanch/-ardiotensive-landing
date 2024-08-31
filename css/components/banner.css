@@ -21,6 +21,7 @@ h3 {
   flex-direction: column;
   text-align: center;
   background-color: #f4f4f4;
+  border-top: 2px solid var(--pressed-state-color);
 }
 .banner-wrap {
   position: relative;
