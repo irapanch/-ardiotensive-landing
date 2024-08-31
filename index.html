@@ -23,7 +23,7 @@
         <ul class="menu-list">
           <li class="menu-link"><a href="#about">About</a></li>
           <li class="menu-link"><a href="#reviews">Reviews</a></li>
-          <li class="menu-link"><a href="#contact">Contact</a></li>
+          <li class="menu-link"><a href="#contact">Contacts</a></li>
         </ul>
 
         <!--  ======  BURGER BUTTON  ========= -->
@@ -69,51 +69,311 @@
       </div>
     </section>
 
-    <section id="about" class="about">
-      <div class="advantage">
-        <img src="icon1.png" alt="Icon 1" />
-        <h2>Advantage 1</h2>
-        <p>Description of advantage 1.</p>
-      </div>
-      <div class="advantage">
-        <img src="icon2.png" alt="Icon 2" />
-        <h2>Advantage 2</h2>
-        <p>Description of advantage 2.</p>
-      </div>
-      <div class="advantage">
-        <img src="icon3.png" alt="Icon 3" />
-        <h2>Advantage 3</h2>
-        <p>Description of advantage 3.</p>
+    <section id="about" class="about container">
+      <h2>Compound</h2>
+      <div class="about-wrapper">
+        <div class="advantage">
+          <div class="about-img">
+            <img
+              src="./images/icons-about/heart-pulse.png"
+              alt="Heart-pulse"
+              width="600"
+              height="600"
+            />
+          </div>
+
+          <h3>Support for Cardiovascular Health</h3>
+          <p>
+            <em>Hawthorn</em> and <em>olive leaves</em> help strengthen the
+            heart and improve blood circulation. <em>Garlic</em> helps reduce
+            cholesterol levels and blood pressure.
+          </p>
+        </div>
+        <div class="advantage">
+          <div class="about-img">
+            <img
+              src="./images/icons-about/cholesterol--blood.png"
+              alt="Cholesterol"
+              width="600"
+              height="600"
+            />
+          </div>
+
+          <h3>Vessel Cleansing</h3>
+          <p>
+            Concentrates of
+            <em>radish, apple, black currant, sweet potato,</em> and
+            <em>cherry</em> contain antioxidants that help cleanse vessels of
+            harmful substances. <em>Hawthorn</em> helps dilate blood vessels,
+            improving blood flow.
+          </p>
+        </div>
+        <div class="advantage">
+          <div class="about-img">
+            <img
+              src="./images/icons-about/hypertensy.png"
+              alt="Hypertensy"
+              width="600"
+              height="600"
+            />
+          </div>
+
+          <h3>Combating Hypertension and High Blood Pressure</h3>
+          <p>
+            <em>Garlic</em> and <em>hawthorn</em> are known for their properties
+            in lowering blood pressure. <em>Olive leaves</em> help regulate
+            blood pressure and maintain it at a healthy level.
+          </p>
+        </div>
       </div>
     </section>
-
+    <!-- ============= REVIEWS =============== -->
     <section id="reviews" class="reviews">
-      <div class="review-card">
-        <img src="user1.jpg" alt="User 1" />
-        <h3>Name 1</h3>
-        <p>Review 1.</p>
-      </div>
-      <div class="review-card">
-        <img src="user2.jpg" alt="User 2" />
-        <h3>Name 2</h3>
-        <p>Review 2.</p>
-      </div>
-      <div class="review-card">
-        <img src="user3.jpg" alt="User 3" />
-        <h3>Name 3</h3>
-        <p>Review 3.</p>
-      </div>
-    </section>
+      <h2>Reviews</h2>
+      <div class="container">
+        <div class="review-card">
+          <img
+            src="./images/people/pers1.jpg"
+            alt="User 1"
+            width="600"
+            height="750"
+          />
+          <div class="card-wrap">
+            <h3>Alla</h3>
+            <div class="review-block">
+              <p class="review-text">
+                At my age, I faced the problem of blood pressure spikes. The
+                Cardiotensive
+                <span class="more-text"
+                  >medication helped. It is an excellent choice for those
+                  seeking a natural solution for hypertension! The convenient
+                  dosage makes it easy to use.</span
+                >
+                <span class="dots">...</span>
+                <button class="read-more">Read more</button>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <img
+            src="./images/people/pers2.jpg"
+            alt="User 2"
+            width="600"
+            height="750"
+          />
+          <div class="card-wrap">
+            <h3>Ashton</h3>
+            <div class="review-block">
+              <p class="review-text">
+                Healthy eating is my top priority! Cardiotensive is an excellent
+                <span class="more-text"
+                  >supplement for controlling cholesterol levels in the blood
+                  vessels. Thanks to its powerful plant extracts, this product
+                  effectively supports heart and artery health. I like it!</span
+                ><span class="dots">...</span>
+                <button class="read-more">Read more</button>
+              </p>
+            </div>
 
-    <section id="contact" class="contact">
-      <form id="contact-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone" required />
-        <button type="submit">Submit</button>
-      </form>
+            <!-- === video ==== -->
+            <div class="video-block">
+              <a
+                class="review-video"
+                href="#"
+                onclick="document.getElementById('myVideo').style.display='block'; document.getElementById('closeButton').style.display='block'; return false;"
+                >Click to watch the video review</a
+              >
+
+              <video
+                id="myVideo"
+                width="320"
+                height="240"
+                controls
+                style="display: none"
+              >
+                <source src="./images/video/IMG_3194.MP4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+
+              <button
+                id="closeButton"
+                style="display: none"
+                onclick="closeVideo()"
+              >
+                Close Video
+              </button>
+            </div>
+
+            <!-- ============ -->
+          </div>
+        </div>
+        <div class="review-card">
+          <img
+            src="./images/people/pers3.jpg"
+            alt="User 3"
+            width="600"
+            height="750"
+          />
+          <div class="card-wrap">
+            <h3>Jenny</h3>
+            <div class="review-block">
+              <p class="review-text">
+                My life is connected with sports and daily physical activities.
+                I
+                <span class="more-text">
+                  have long been looking for a supplement that would help
+                  maintain my health in an energetic state. I found the solution
+                  in Cardiotensive. I recommend it to everyone!</span
+                ><span class="dots">...</span>
+                <button class="read-more">Read more</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <script type="module" src="./main.js"></script>
+    <!-- ========== FOOTER ============== -->
+
+    <footer id="contact" class="container backdrop-modal">
+      <div class="footer-logo-wrap">
+        <a class="logo link" href="./index.html">Cardio<span>tensive</span></a>
+        <img class="logo-img" src="./images/logo1.jpg" alt="logo" />
+      </div>
+
+      <h3>Use the form to send us a message</h3>
+      <!-- ======= FORM =========== -->
+      <form class="backdrop-modal-form" action="/thanks-page.html" method="GET">
+        <div class="backdrop-modal-form-wrapper">
+          <label class="backdrop-modal-form-userdata" for="user-name">
+            <span class="backdrop-modal-form-input-desc">Name</span>
+          </label>
+          <div class="backdrop-modal-form-input-wrapper">
+            <input
+              class="backdrop-modal-form-input"
+              type="text"
+              name="user-name"
+              id="user-name"
+              required
+              pattern="^[a-zA-Z]+$"
+              minlength="2"
+            />
+            <svg class="backdrop-modal-form-input-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="backdrop-modal-form-wrapper">
+          <label class="backdrop-modal-form-userdata" for="user-phone-number">
+            <span class="backdrop-modal-form-input-desc">Phone</span>
+          </label>
+          <div class="backdrop-modal-form-input-wrapper">
+            <input
+              class="backdrop-modal-form-input"
+              type="tel"
+              name="user-phone-number"
+              id="user-phone-number"
+              required
+              pattern="[0-9]{10}"
+            />
+            <svg class="backdrop-modal-form-input-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="backdrop-modal-form-wrapper">
+          <label class="backdrop-modal-form-userdata" for="user-email">
+            <span class="backdrop-modal-form-input-desc">Email</span>
+          </label>
+          <div class="backdrop-modal-form-input-wrapper">
+            <input
+              class="backdrop-modal-form-input"
+              type="email"
+              name="user-email"
+              id="user-email"
+            />
+            <svg class="backdrop-modal-form-input-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="backdrop-modal-form-wrapper textarea">
+          <label class="backdrop-modal-form-userdata" for="user-comment">
+            <span class="backdrop-modal-form-input-desc">Comment</span>
+          </label>
+          <textarea
+            class="backdrop-modal-form-textarea"
+            name="user-comment"
+            placeholder="Text input"
+            id="user-comment"
+          ></textarea>
+        </div>
+
+        <div class="backdrop-modal-form-wrapper checkbox">
+          <input
+            id="user-privacy"
+            class="backdrop-modal-form-checkbox-input visually-hidden"
+            type="checkbox"
+            name="user-privacy"
+            value="true"
+            required
+          />
+          <label class="backdrop-modal-form-checkbox" for="user-privacy">
+            <span class="backdrop-modal-form-check">
+              <svg class="backdrop-modal-form-check-icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-check-mark"></use>
+              </svg>
+            </span>
+            I accept the terms and conditions of the
+            <a class="backdrop-modal-form-link" href=""> Privacy Policy </a>
+          </label>
+        </div>
+
+        <button type="submit" class="backdrop-modal-form-btn">Send</button>
+      </form>
+      <!-- ============== -->
+      <div class="copyrigth-block">
+        <p>&copy; 2024. Cardiotensive</p>
+        <a class="copyrigth-link" href="#">Privacy Police</a>
+      </div>
+    </footer>
+
+    <!-- ========= header mobile MODAL  ============ -->
+
+    <div class="header-mobile-modal js-menu-container" id="mobile-menu">
+      <div class="header-mobile-modal-container container">
+        <button
+          type="button"
+          class="header-mobile-modal-btn-close js-close-menu"
+        >
+          <svg class="header-mobile-modal-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-modal"></use>
+          </svg>
+        </button>
+        <div class="header-mobile-modal-wripper">
+          <ul class="header-mobile-modal-menu-list list">
+            <li class="mobile-modal-menu-item">
+              <a class="mobile-modal-menu-link underline link" href="#about"
+                >About</a
+              >
+            </li>
+            <li class="mobile-modal-menu-item">
+              <a class="mobile-modal-menu-link link" href="#reviews">Reviews</a>
+            </li>
+            <li class="mobile-modal-menu-item">
+              <a class="mobile-modal-menu-link link" href="#contact"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+          <div class="header-mobile-modal-wripper-bottom"></div>
+        </div>
+      </div>
+    </div>
+    <!-- ========= /// header mobile MODAL  ============ -->
+    <script src="./js/body-scroll-lock.js"></script>
+    <script src="./js/video.js"></script>
+    <script src="./js/read-more.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

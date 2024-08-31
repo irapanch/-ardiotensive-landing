@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cardiotensive is a  resource describing a dietary supplement designed to support cardiovascular health. Service created by the Iryna Panchenko"
+    />
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <title>Cardiotensive</title>
+  </head>
+  <body>
+    <!-- =========== HEADER =========== -->
+    <header class="header-wrapper container">
+      <a class="logo link" href="./index.html">Cardio<span>tensive</span></a>
+      <img class="logo-img" src="./images/logo1.jpg" alt="logo" />
+
+      <nav>
+        <ul class="menu-list">
+          <li class="menu-link"><a href="index.html#about">About</a></li>
+          <li class="menu-link"><a href="index.html#reviews">Reviews</a></li>
+          <li class="menu-link"><a href="index.html#contact">Contacts</a></li>
+        </ul>
+
+        <!--  ======  BURGER BUTTON  ========= -->
+        <button
+          type="button"
+          class="header-mobile-menu-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="header-mobile-menu-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-burger-1"></use>
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <section class="thank-you-wrap">
+      <div class="container">
+        <div class="thank-wrapper">
+          <div class="thank-you-message">
+            <h1>Thank You!</h1>
+            <h3>
+              Your request has been successfully received. An operator will
+              contact you soon.
+            </h3>
+          </div>
+          <div class="thank-you-img">
+            <img
+              src="./images/cardiotensive-print.png"
+              alt="Print image"
+              width="280"
+              height="225"
+            />
+          </div>
+        </div>
+        <div class="copyrigth-block">
+          <p>&copy; 2024. Cardiotensive</p>
+          <a class="copyrigth-link" href="#">Privacy Police</a>
+        </div>
+      </div>
+    </section>
+    <!-- ========= header mobile MODAL  ============ -->
+
+    <div class="header-mobile-modal js-menu-container" id="mobile-menu">
+      <div class="header-mobile-modal-container container">
+        <button
+          type="button"
+          class="header-mobile-modal-btn-close js-close-menu"
+        >
+          <svg class="header-mobile-modal-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-modal"></use>
+          </svg>
+        </button>
+        <div class="header-mobile-modal-wripper">
+          <ul class="header-mobile-modal-menu-list list">
+            <li class="mobile-modal-menu-item">
+              <a
+                class="mobile-modal-menu-link underline link"
+                href="index.html#about"
+                >About</a
+              >
+            </li>
+            <li class="mobile-modal-menu-item">
+              <a class="mobile-modal-menu-link link" href="index.html#reviews"
+                >Reviews</a
+              >
+            </li>
+            <li class="mobile-modal-menu-item">
+              <a class="mobile-modal-menu-link link" href="index.html#contact"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+          <div class="header-mobile-modal-img">
+            <img
+              src="./images/cardiotensive-print.png"
+              alt="Print image"
+              width="280"
+              height="225"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ========= /// header mobile MODAL  ============ -->
+
+    <script src="./js/body-scroll-lock.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
