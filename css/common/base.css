@@ -1,0 +1,84 @@
+:root {
+  --text-color: #000000;
+  --background-color: #b1e98d;
+  --logo-text: #ff313b;
+  --reviews-card-text: rgba(246, 245, 239, 0.5);
+  --pressed-state-color: #296603;
+  --services-image-color: #ffffff;
+  --box-shadow: #777777;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Cera Pro", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4;
+
+  letter-spacing: -0.32px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  border-radius: 7px;
+}
+
+/* Mobile devices */
+.section {
+  padding: 40px 0;
+}
+/* Tablet devices */
+@media only screen and (min-width: 768px) {
+  .section {
+    padding: 64px 0 36px 0;
+  }
+}
+/* Desktop devices */
+@media only screen and (min-width: 1440px) {
+  .section {
+    padding: 64px 0 100px 0;
+  }
+}
+/* Mobile devices */
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Tablet devices */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+/* Desktop devices */
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding: 0 40px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
