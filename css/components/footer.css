@@ -1,0 +1,216 @@
+/* --- mobile 320-767 --- */
+h3 {
+  text-align: center;
+  margin: 0;
+}
+.backdrop-modal {
+  padding: 50px 20px;
+}
+.footer-logo-wrap {
+  position: relative;
+  margin-bottom: 35px;
+}
+footer .logo {
+  text-align: center;
+  display: block;
+}
+footer .logo-img {
+  top: -20px;
+  left: 43px;
+}
+.copyrigth-block {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--pressed-state-color);
+  margin-top: 20px;
+}
+
+.copyrigth-link {
+  font-size: 11px;
+  color: var(--primary-brand-color);
+  text-decoration: underline;
+}
+/* --- tablet 768-1439 --- */
+@media screen and (min-width: 768px) {
+  footer .logo {
+    text-align: left;
+  }
+  footer .logo-img {
+    left: 0;
+  }
+}
+/* --- desktop 1440 --- */
+@media screen and (min-width: 1440px) {
+}
+
+/* === FORM ===== */
+/* --- mobile 320-767 --- */
+
+.backdrop-modal-form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 7px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: var(--services-image-color);
+  padding: 24px 16px;
+}
+.backdrop-modal-form-wrapper {
+  margin-bottom: 8px;
+}
+.backdrop-modal-form-userdata {
+  display: block;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--pressed-state-color);
+  margin-bottom: 4px;
+}
+
+.backdrop-modal-form-input-wrapper {
+  display: block;
+  position: relative;
+}
+.backdrop-modal-form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid var(--pressed-state-color);
+  border-radius: 4px;
+  background-color: transparent;
+  outline: transparent;
+  padding-left: 38px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop-modal-form-input:focus,
+.backdrop-modal-form-input:hover {
+  border-color: var(--background-color);
+  outline: none;
+}
+.backdrop-modal-form-input-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translate(0, -50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop-modal-form-input:focus,
+.backdrop-modal-form-input:hover + .backdrop-modal-form-input-icon {
+  fill: var(--background-color);
+}
+.textarea {
+  margin-bottom: 16px;
+}
+.backdrop-modal-form-textarea {
+  width: 100%;
+  height: 120px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--pressed-state-color);
+  background-color: transparent;
+  padding: 8px 16px;
+  border: 1px solid var(--pressed-state-color);
+  border-radius: 7px;
+  outline: transparent;
+  resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop-modal-form-textarea:focus,
+.backdrop-modal-form-textarea:hover {
+  border-color: var(--background-color);
+  outline: none;
+}
+.checkbox {
+  margin-bottom: 24px;
+}
+.backdrop-modal-form-checkbox-input:checked
+  + .backdrop-modal-form-checkbox
+  > .backdrop-modal-form-check {
+  border: none;
+  background-color: var(--background-color);
+  fill: var(--pressed-state-color);
+}
+.backdrop-modal-form-textarea:hover,
+.backdrop-modal-form-checkbox-input:focus
+  + .backdrop-modal-form-checkbox
+  > .backdrop-modal-form-check {
+  outline: 1px solid var(--pressed-state-color);
+}
+.backdrop-modal-form-checkbox {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--pressed-state-color);
+}
+.backdrop-modal-form-check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 16px;
+  height: 16px;
+  fill: transparent;
+  border: 1px solid var(--pressed-state-color);
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop-modal-form-link {
+  font-size: 11px;
+  color: var(--primary-brand-color);
+  text-decoration: underline;
+}
+.backdrop-modal-form-btn {
+  display: block;
+
+  min-width: 169px;
+  height: 56px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--pressed-state-color);
+  background-color: var(--background-color);
+  border: none;
+  box-shadow: 0px 1px 8px var(--logo-text);
+  cursor: pointer;
+  padding: 16px 32px;
+  border-radius: 7px;
+  margin: 0 auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop-modal-form-btn:hover,
+.backdrop-modal-form-btn:focus {
+  background-color: var(--reviews-card-text);
+  box-shadow: 0px 4px 4px var(--background-color);
+}
+
+/* --- tablet 768-1439 --- */
+@media screen and (min-width: 768px) {
+  .backdrop-modal-form {
+    width: 468px;
+    margin: auto;
+  }
+}
+
+/* --- desktop 1440 --- */
+@media screen and (min-width: 1440px) {
+  .backdrop-modal-form {
+    width: 500px;
+  }
+}
